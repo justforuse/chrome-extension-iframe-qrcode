@@ -26,6 +26,7 @@ document.querySelectorAll('iframe').forEach(iframe => {
         qrContainer.style.borderRadius = '4px';
         qrContainer.style.overflow = 'hidden';
         qrContainer.style.boxShadow = '0px 0px 2px 0px #aaa';
+        qrContainer.style.width = 'max-content'
         QRCode.toDataURL(url).then(url => {
             const img = document.createElement('img');
             img.src = url;
